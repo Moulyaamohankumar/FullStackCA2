@@ -1,6 +1,6 @@
 const express = require('express');
 const userModel = require('../Model/userModel');
-const auth = require('../Middleware/auth');
+// const auth = require('../Middleware/auth');
 const addressRouter = express.Router();
 
 addressRouter.post('/address', auth, async (req, res) => {
