@@ -3,7 +3,7 @@ const cartRouter = express.Router();
 const mongoose = require('mongoose');
 const productModel = require('../Model/productModel');
 const userModel = require('../Model/userModel');
-const auth = require('../Middleware/auth');
+// const auth = require('../MiddleWare/auth');
 
 cartRouter.get('/get-cart', async (req, res) => {
     const { email } = req.body;
