@@ -1,9 +1,9 @@
 const express = require('express');
 const profileRouter = express.Router();
 const profileModel = require('../Model/profileModel');
-const auth = require('../Middleware/auth');
+// const auth = require('../Middleware/auth');
 
-profileRouter.post('/create-profile', auth,async (req, res) => {
+profileRouter.post('/create-profile', async (req, res) => {
     try {
         const { name, emailID, phoneNumber, password, age } = req.body;
         const findProfile = await profileModel.findOne({ emailID });
